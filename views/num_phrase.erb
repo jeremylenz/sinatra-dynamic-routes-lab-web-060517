@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NUM PHRASE</title>
+  </head>
+  <body>
+    <% @number = params[:number].to_i %>
+    <% @phrase = params[:phrase] %>
+    <% @number.times do %>
+      <li><%= @phrase %></li>
+    <% end %>
+  </body>
+</html>
